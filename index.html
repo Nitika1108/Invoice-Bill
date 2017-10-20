@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Invoice</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+            .equal
+            {
+                display: flex;
+                display: -webkit-flex;
+                flex-wrap: wrap;
+            }
+            th
+            {
+                font-weight: normal;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div style="padding: 10px;"></div>
+            <div class="col-sm-12">
+                <table class="table table-responsive">
+                    <tr class="table-bordered">
+                        <td class="col-sm-12">
+                            <!--GST Number-->
+                            <div class="col-sm-6">GSTIN &#45; 099AAAPADD0011ZA</div>
+
+                            <!--text : "ORIGINAL"-->
+                            <div class="col-sm-6" style="text-align:right">ORIGINAL</div>
+                            <div class="text-center">
+                               <!--text : "TAX INVOICE"-->
+                               <h2>TAX INVOICE</h2>
+                               <!--Company Name-->
+                               <h2 style="margin: 0px;">ABC &amp; Co&#46;</h2>
+                               <!--Company Address-->
+                               <h3 style="margin: 0px;">Raj Nagar&#44; Ghaziabad</h3>
+                               <!--&#40;Trial Version&#41;-->
+                               <h4>&#40;Trial Version&#41;</h4>
+                               <!--Mobile Number-->
+                               <div class="col-sm-12 text-center">
+                                   <h4>Mob&#58;9999999999 E&#45;mail&#58;trial@gmail.com</h4>
+                               </div>
+                            </div>
+                        </td>
+                    </tr> <!--row 1 closes here-->
+                    <tr>
+                        <td class="table-bordered col-xs-6 equal">
+                            <tr class="table-bordered col-xs-6 equal">
+                                <td>
+                                    <!--Reverse Charge-->
+                                    <h5>Reverse Charge &#58; No</h5>
+                                    <!--Invoice Number-->
+                                    <h5>Invoice No &#58; 23</h5>
+                                    <!--Invoice Date-->
+                                    <h5>Invoice Date &#58; 16&#47;10&#47;2017</h5>
+                                    <!--State-->
+                                    <h5>State &#58; Uttar Pradesh</h5>
+                                    <!--Status Code-->
+                                    <h5>State Code &#58; 09</h5>
+                                    <!--this line makes the two rows equal-->
+                                    <h5 style="visibility: hidden;">blank line</h5>
+                                </td>
+                            </tr>
+                            <tr class="table-bordered col-xs-6 equal">
+                                <td>
+                                    <!--PO Number-->
+                                    <h5>PO Number &#58;</h5>
+                                    <!--Trasportation Mode-->
+                                    <h5>Transportation Mode &#58;</h5>
+                                    <!--Vehicle Number-->
+                                    <h5>Vehicle Number &#58;</h5>
+                                    <!--Date Of Supply-->
+                                    <h5>Date Of Supply &#58;</h5>
+                                    <!--Place Of Supply-->
+                                    <h5>Place Of Supply &#58; Uttar Pradesh</h5>
+                                    <!--Eway Bill Number-->
+                                    <h5>Eway Bill Number &#58;</h5>
+                                </td>
+                            </tr>
+                        </td>
+                    </tr>
+                    <tr class="col-sm-6 table-bordered">
+                        <th>
+                            <h5 class="text-center">Details of Reciever &#124; Billed To &#58;</h5>
+                            <h5>Name &#58;</h5>
+                            <h5>Address &#58;</h5>
+                            <h5>GSTIN &#58;</h5>
+                            <h5>State &#58;</h5>
+                            <h5>State Address &#58;</h5>
+                        </th>
+                    </tr>
+                    <tr class="col-sm-6 table-bordered">
+                        <th>
+                            <h5 class="text-center">Details of Consignee &#124; Shipped To &#58;</h5>
+                            <h5>Name &#58;</h5>
+                            <h5>Address &#58;</h5>
+                            <h5>GSTIN &#58;</h5>
+                            <h5>State &#58;</h5>
+                            <h5>State Address &#58;</h5>
+                        </th>
+                        <td></td>
+                    </tr>
+                    <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center table-bordered">S.No</th>
+                                    <th class="text-center table-bordered">Description</th>
+                                    <th class="text-center table-bordered">HSN&#47;SAC</th>
+                                    <th class="text-center table-bordered">UQC</th>
+                                    <th class="text-center table-bordered">Qty</th>
+                                    <th class="text-center table-bordered">Rate</th>
+                                    <th class="text-center table-bordered">Amount</th>
+                                    <th class="text-center table-bordered">Dis&#40;&#37;&#41;</th>
+                                    <th class="text-center table-bordered">Taxable Value</th>
+                                    <th class="text-center table-bordered">CGST Rate</th>
+                                    <th class="text-center table-bordered">CGST Amt</th>
+                                    <th class="text-center table-bordered">SGST Rate</th>
+                                    <th class="text-center table-bordered">SGST Amt</th>
+                                    <th class="text-center table-bordered">IGST Rate</th>
+                                    <th class="text-center table-bordered">IGST Amt</th>
+                                    <th class="text-center table-bordered">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center table-bordered">1</td>
+                                    <td class="text-center table-bordered">Coffee</td>
+                                    <td class="text-center table-bordered"></td>
+                                    <td class="text-center table-bordered">KGS</td>
+                                    <td class="text-center table-bordered">15150</td>
+                                    <td class="text-center table-bordered">20.25</td>
+                                    <td class="text-center table-bordered">306787.5</td>
+                                    <td class="text-center table-bordered">0.0</td>
+                                    <td class="text-center table-bordered">306787.50</td>
+                                    <td class="text-center table-bordered">9</td>
+                                    <td class="text-center table-bordered">27610.88</td>
+                                    <td class="text-center table-bordered">9</td>
+                                    <td class="text-center table-bordered">27610.88</td>
+                                    <td class="text-center table-bordered">-</td>
+                                    <td class="text-center table-bordered">-</td>
+                                    <td class="text-center table-bordered">362009.26</td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                </tr>
+                                <tr>
+                                    <td ></td>
+                                    <td >Total</td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td ></td>
+                                    <td >Rs&#46; 3620009 &#47;&#45;</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    <div class="col-lg-12 col-sm-6 col-xs-3 table-bordered">
+                        <h5>Total Amount &#40;in words&#41; &#58; Rupees Two Lakhs Sixty Two Thousand Nine Only</h5>
+                    </div>
+                    <div class="col-lg-12 table-bordered equal" style="padding: 0px;">
+                        <div class="col-lg-6 text-center equal">
+                            <h5 class="col-sm-12">Summary</h5>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th class="text-center">Rate</th>
+                                    <th class="text-center">Sale</th>
+                                    <th class="text-center">CGST</th>
+                                    <th class="text-center">SGST</th>
+                                    <th class="text-center">IGST</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>18&#37;</td>
+                                        <td>306787.50</td>
+                                        <td>2761088.50</td>
+                                        <td>2761088.50</td>
+                                        <td>0.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">Freight &#45; 0</td>
+                                        <td colspan="2">&#64;Tax 18&#37;&#44; Rupees 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6">
+                            <table class="table table-bordered equal" style="margin-top: 20px;">
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Total Amount Before Tax</td>
+                                    <td class="col-sm-4">306787.50</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Add &#58; Freight Charges</td>
+                                    <td class="col-sm-4">0</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Taxable Value</td>
+                                    <td class="col-sm-4">306787.50</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Add &#58; CGST</td>
+                                    <td class="col-sm-4">20610.88</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Add &#58; SGST</td>
+                                    <td class="col-sm-4">20610.88</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Add &#58; IGST</td>
+                                    <td class="col-sm-4">NA</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">Total Amount After Tax</td>
+                                    <td class="col-sm-4">362009.26</td>
+                                </tr>
+                                <tr class="col-sm-12" style="padding: 0px;">
+                                    <td class="col-sm-12">GST On Reverse Charge</td>
+                                    <td class="col-sm-4">No</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 equal" style="padding: 0px;">
+                        <div class="col-lg-6 table-bordered">
+                            <h5>&#58; Terms &amp; Conditions &#58;</h5>
+                            <h5 style="padding-left: 20px;">&#9679; Goods once sold will not be returned</h5>
+                            <h5 style="padding-left: 20px;">&#9679; Goods once sold will not be returned</h5>
+                            <h5 style="padding-left: 20px;">&#9679; Goods once sold will not be returned</h5>
+                            <h5 style="padding-left: 20px;">&#9679; Goods once sold will not be returned</h5>
+                            <h5 style="padding-left: 20px;">&#9679; Goods once sold will not be returned</h5>
+                        </div>
+                        <div class="col-lg-6 table-bordered">
+                            <h5 style="text-align: right">Certified that the particulars given above are true and correct&#46;</h5>
+                            <h4 style="text-align: right">For ABC &amp; Co&#46;</h4>
+                            <h5 style="text-align: right; padding-top: 50px;">Authorised Signatory</h5>
+                        </div>
+                    </div>
+                </table>
+            </div>
+        </div> <!-- /container -->
+        <div style="padding: 20px;"></div>
+    </body>
+</html>
